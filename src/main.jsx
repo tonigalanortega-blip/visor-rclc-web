@@ -5,7 +5,7 @@ import "./index.css";
 
 function mountApp() {
   const el = document.getElementById("root");
-  if (!el) return setTimeout(mountApp, 50);
+  if (!el) return setTimeout(mountApp, 50); // espera si root aún no está
   ReactDOM.createRoot(el).render(
     <React.StrictMode>
       <App />
